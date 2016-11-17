@@ -98,10 +98,10 @@
     				   <!-- Set up your HTML -->
     				   <h2 class="featured_title">On Featured</h2>
     				  <div class="slick_slider">
-                          <?php for ($i = 0; $i < 20; $i++) { ?>
+                          <?php foreach ($data as $news) { ?>
                                 <div class="single_iteam">
-              					  <img src="<?php echo $data->image ?>" alt="img" height="300" width="250">
-              					  <h2><a class="slider_tittle" href="#"><?php echo $data->title  ?></a></h2>
+              					  <img src="<?php echo $news->image ?>" alt="img" height="300" width="250">
+              					  <h2><a class="slider_tittle" href="#"><?php echo $news->title  ?></a></h2>
               					</div>
                           <?php } ?>
 
