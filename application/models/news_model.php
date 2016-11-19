@@ -23,6 +23,15 @@ class NEWS_MODEL extends CI_Model {
 		return $query->result();
 	}
 
+	public function GetNewsMonthPost()
+	{
+		$month_year = date('m Y');
+		$this->db->where("DATE_FORMAT(date, '%m %Y') =", $month_year);
+		$query = $this->db->get('news');
+
+		return $query->result();
+	}
+
 	// public function GetNews($id)
 	// {
 	// 	$query = $this->db->get_where('news', array('id_news' => $id));

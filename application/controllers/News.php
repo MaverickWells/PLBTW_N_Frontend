@@ -20,7 +20,12 @@ class News extends CI_Controller {
 	 */
 	public function index()
 	{
-		$data = $this->news_model->GetAllNews();
-		$this->load->view('news_home', array('data' => $data));
+		$all_news = $this->news_model->GetAllNews();
+		$month_data = $this->news_model->GetNewsMonthPost();
+		$this->load->view('news_home', array(
+			'data' => $all_news,
+			'month' => $month_data,
+			)
+		);
 	}
 }

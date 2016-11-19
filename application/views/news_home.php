@@ -104,36 +104,6 @@
               					  <h2><a class="slider_tittle" href="#"><?php echo $news->title  ?></a></h2>
               					</div>
                           <?php } ?>
-
-    					<!-- <div class="single_iteam">
-    					  <img src="<?php echo base_url() ?>assets/img/300x250x2.jpg" alt="img">
-    					  <h2><a class="slider_tittle" href="#">Fusce eu nulla semper porttitor felis sit amet</a></h2>
-    					</div>
-    					<div class="single_iteam">
-    					  <img src="<?php echo base_url() ?>assets/img/300x250x3.jpg" alt="img">
-    					   <h2><a class="slider_tittle" href="#">Fusce eu nulla semper porttitor felis sit amet</a></h2>
-    					</div>
-    					<div class="single_iteam">
-    					  <img src="<?php echo base_url() ?>assets/img/300x250x4.jpg" alt="img">
-    					   <h2><a class="slider_tittle" href="#">Fusce eu nulla semper porttitor felis sit amet</a></h2>
-    					</div>
-
-    					<div class="single_iteam">
-    					  <img src="<?php echo base_url() ?>assets/img/300x250x5.jpg" alt="img">
-    					  <h2><a class="slider_tittle" href="#">Fusce eu nulla semper porttitor felis sit amet</a></h2>
-    					</div>
-    					<div class="single_iteam">
-    					  <img src="<?php echo base_url() ?>assets/img/300x250x6.jpg" alt="img">
-    					  <h2><a class="slider_tittle" href="#">Fusce eu nulla semper porttitor felis sit amet</a></h2>
-    					</div>
-    					<div class="single_iteam">
-    					  <img src="<?php echo base_url() ?>assets/img/300x250x3.jpg" alt="img">
-    					   <h2><a class="slider_tittle" href="#">Fusce eu nulla semper porttitor felis sit amet</a></h2>
-    					</div>
-    					<div class="single_iteam">
-    					  <img src="<?php echo base_url() ?>assets/img/300x250x5.jpg" alt="img">
-    					   <h2><a class="slider_tittle" href="#">Fusce eu nulla semper porttitor felis sit amet</a></h2>
-    					</div> -->
     				  </div>
     				</div><!-- End featured slider -->
             </div>
@@ -146,161 +116,18 @@
                 <div class="single_widget">
                   <h2>Post of the month</h2>
                   <ul class="post_nav">
-                    <li>
-                      <figure class="effect-lily">
-                        <a href="single_page.html"><img src="<?php echo base_url() ?>assets/img/270x150x4.jpg" alt="img"></a>
-                        <figcaption>
-                          <a href="single_page.html">It’s Now An Android World- Feel The Power</a>
-                        </figcaption>
-                      </figure>
-                    </li>
-                    <li>
-                      <figure class="effect-lily">
-                        <a href="single_page.html"><img src="<?php echo base_url() ?>assets/img/270x150x4.jpg" alt="img"></a>
-                        <figcaption>
-                          <a href="single_page.html">It’s Now An Android World- Feel The Power</a>
-                        </figcaption>
-                      </figure>
-                    </li>
-                    <li>
-                      <figure class="effect-lily">
-                        <a href="single_page.html"><img src="<?php echo base_url() ?>assets/img/270x150x4.jpg" alt="img"></a>
-                        <figcaption>
-                          <a href="single_page.html">It’s Now An Android World- Feel The Power</a>
-                        </figcaption>
-                      </figure>
-                    </li>
-                    <li>
-                      <figure class="effect-lily">
-                        <a href="single_page.html"><img src="<?php echo base_url() ?>assets/img/270x150x4.jpg" alt="img"></a>
-                        <figcaption>
-                          <a href="single_page.html">It’s Now An Android World- Feel The Power</a>
-                        </figcaption>
-                      </figure>
-                    </li>
-                    <li>
-                      <figure class="effect-lily">
-                        <a href="single_page.html"><img src="<?php echo base_url() ?>assets/img/270x150x4.jpg" alt="img"></a>
-                        <figcaption>
-                          <a href="single_page.html">It’s Now An Android World- Feel The Power</a>
-                        </figcaption>
-                      </figure>
-                    </li>
-                    <li>
-                      <figure class="effect-lily">
-                        <a href="single_page.html"><img src="<?php echo base_url() ?>assets/img/270x150x4.jpg" alt="img"></a>
-                        <figcaption>
-                          <a href="single_page.html">It’s Now An Android World- Feel The Power</a>
-                        </figcaption>
-                      </figure>
-                    </li>
-                  </ul>
-                </div><!-- End single widget -->
-                <!-- start single widget -->
-                <div class="single_widget">
-                  <h2>Popular Post</h2>
-                  <ul class="ppost_nav wow fadeInDown">
-                    <li>
-                      <div class="media">
-                        <a class="media-left" href="single_page.html">
-                          <img src="<?php echo base_url() ?>assets/img/70x70.jpg" alt="img">
-                        </a>
-                        <div class="media-body">
-                          <a class="catg_title" href="single_page.html"> Aliquam malesuada diam eget turpis varius</a>
-                        </div>
-                      </div>
-                    </li>
-                     <li>
-                      <div class="media">
-                        <a class="media-left" href="single_page.html">
-                          <img src="<?php echo base_url() ?>assets/img/70x70.jpg" alt="img">
-                        </a>
-                        <div class="media-body">
-                          <a class="catg_title" href="#"> Aliquam malesuada diam eget turpis varius</a>
-                        </div>
-                      </div>
-                    </li>
-                      <li>
-                      <div class="media">
-                        <a class="media-left" href="single_page.html">
-                          <img src="<?php echo base_url() ?>assets/img/70x70.jpg" alt="img">
-                        </a>
-                        <div class="media-body">
-                          <a class="catg_title" href="#"> Aliquam malesuada diam eget turpis varius</a>
-                        </div>
-                      </div>
-                    </li>
-                      <li>
-                      <div class="media">
-                        <a class="media-left" href="#">
-                          <img src="<?php echo base_url() ?>assets/img/70x70.jpg" alt="img">
-                        </a>
-                        <div class="media-body">
-                          <a class="catg_title" href="#"> Aliquam malesuada diam eget turpis varius</a>
-                        </div>
-                      </div>
-                    </li>
-                    <li>
-                      <div class="media">
-                        <a class="media-left" href="#">
-                          <img src="<?php echo base_url() ?>assets/img/70x70.jpg" alt="img">
-                        </a>
-                        <div class="media-body">
-                          <a class="catg_title" href="#"> Aliquam malesuada diam eget turpis varius</a>
-                        </div>
-                      </div>
-                    </li>
-                     <li>
-                      <div class="media">
-                        <a class="media-left" href="#">
-                          <img src="<?php echo base_url() ?>assets/img/70x70.jpg" alt="img">
-                        </a>
-                        <div class="media-body">
-                          <a class="catg_title" href="#"> Aliquam malesuada diam eget turpis varius</a>
-                        </div>
-                      </div>
-                    </li>
-                      <li>
-                      <div class="media">
-                        <a class="media-left" href="#">
-                          <img src="<?php echo base_url() ?>assets/img/70x70.jpg" alt="img">
-                        </a>
-                        <div class="media-body">
-                          <a class="catg_title" href="#"> Aliquam malesuada diam eget turpis varius</a>
-                        </div>
-                      </div>
-                    </li>
-                      <li>
-                      <div class="media">
-                        <a class="media-left" href="#">
-                          <img src="<?php echo base_url() ?>assets/img/70x70.jpg" alt="img">
-                        </a>
-                        <div class="media-body">
-                          <a class="catg_title" href="#"> Aliquam malesuada diam eget turpis varius</a>
-                        </div>
-                      </div>
-                    </li>
-                    <li>
-                      <div class="media">
-                        <a class="media-left" href="#">
-                          <img src="<?php echo base_url() ?>assets/img/70x70.jpg" alt="img">
-                        </a>
-                        <div class="media-body">
-                          <a class="catg_title" href="#"> Aliquam malesuada diam eget turpis varius</a>
-
-                        </div>
-                      </div>
-                    </li>
-                    <li>
-                      <div class="media">
-                        <a class="media-left" href="#">
-                          <img src="<?php echo base_url() ?>assets/img/70x70.jpg" alt="img">
-                        </a>
-                        <div class="media-body">
-                          <a class="catg_title" href="#"> Aliquam malesuada diam eget turpis varius</a>
-                        </div>
-                      </div>
-                    </li>
+                      <?php if(isset($month)){ ?>
+                          <?php foreach ($month as $news) { ?>
+                              <li>
+                                <figure class="effect-lily">
+                                  <a href=""><img src="<?php echo $news->image ?>" alt="img" height="185" width="150"></a>
+                                  <figcaption>
+                                    <a href=""><?php echo $news->title ?></a>
+                                  </figcaption>
+                                </figure>
+                              </li>
+                          <?php } ?>
+                      <?php } ?>
                   </ul>
                 </div><!-- End single widget -->
               </div>
@@ -311,76 +138,24 @@
 
                 <!-- start featured post -->
                 <ul class="featured_nav">
-                  <li class="wow fadeInDown">
-                    <figure class="featured_img">
-                        <a href="#"><img src="<?php echo base_url() ?>assets/img/550x400.jpg" alt="img"></a>
-                    </figure>
-                    <article class="featured_article">
-                      <div class="article_category">
-                        <a href="#">Technology <i class="fa fa-angle-right"></i></a>
-                        <a href="#">Mobile  <i class="fa fa-angle-right"></i></a>
-                        <a href="#">Samsung</a>
-                      </div>
-                      <h2 class="article_titile"><a href="single_page.html">Apple iPad Production Reaches 4 Million</a></h2>
-                      <p>Nunc tincidunt, elit non cursus euismod, lacus augue ornare metus, egestas imperdiet nulla nisl quis mauris. Suspendisse a pharetra urna. Morbi dui lectus, pharetra nec elementum eget, vulputate ut nisi. Aliquam accumsan, nulla sed feugiat...</p>
-                    </article>
-                  </li>
-                  <li class="wow fadeInDown">
-                    <figure class="featured_img">
-                        <a href="#"><img src="<?php echo base_url() ?>assets/img/550x400.jpg" alt="img"></a>
-                    </figure>
-                    <article class="featured_article">
-                      <div class="article_category">
-                        <a href="#">Technology <i class="fa fa-angle-right"></i></a>
-                        <a href="#">Mobile  <i class="fa fa-angle-right"></i></a>
-                        <a href="#">Samsung</a>
-                      </div>
-                      <h2 class="article_titile"><a href="single_page.html">Apple iPad Production Reaches 4 Million</a></h2>
-                      <p>Nunc tincidunt, elit non cursus euismod, lacus augue ornare metus, egestas imperdiet nulla nisl quis mauris. Suspendisse a pharetra urna. Morbi dui lectus, pharetra nec elementum eget, vulputate ut nisi. Aliquam accumsan, nulla sed feugiat...</p>
-                    </article>
-                  </li>
-                  <li class="wow fadeInDown">
-                    <figure class="featured_img">
-                        <a href="#"><img src="<?php echo base_url() ?>assets/img/550x400.jpg" alt="img"></a>
-                    </figure>
-                    <article class="featured_article">
-                      <div class="article_category">
-                        <a href="#">Technology <i class="fa fa-angle-right"></i></a>
-                        <a href="#">Mobile  <i class="fa fa-angle-right"></i></a>
-                        <a href="#">Samsung</a>
-                      </div>
-                      <h2 class="article_titile"><a href="single_page.html">Apple iPad Production Reaches 4 Million</a></h2>
-                      <p>Nunc tincidunt, elit non cursus euismod, lacus augue ornare metus, egestas imperdiet nulla nisl quis mauris. Suspendisse a pharetra urna. Morbi dui lectus, pharetra nec elementum eget, vulputate ut nisi. Aliquam accumsan, nulla sed feugiat...</p>
-                    </article>
-                  </li>
-                  <li class="wow fadeInDown">
-                    <figure class="featured_img">
-                        <a href="#"><img src="<?php echo base_url() ?>assets/img/550x400.jpg" alt="img"></a>
-                    </figure>
-                    <article class="featured_article">
-                      <div class="article_category">
-                        <a href="#">Technology <i class="fa fa-angle-right"></i></a>
-                        <a href="#">Mobile  <i class="fa fa-angle-right"></i></a>
-                        <a href="#">Samsung</a>
-                      </div>
-                      <h2 class="article_titile"><a href="single_page.html">Apple iPad Production Reaches 4 Million</a></h2>
-                      <p>Nunc tincidunt, elit non cursus euismod, lacus augue ornare metus, egestas imperdiet nulla nisl quis mauris. Suspendisse a pharetra urna. Morbi dui lectus, pharetra nec elementum eget, vulputate ut nisi. Aliquam accumsan, nulla sed feugiat...</p>
-                    </article>
-                  </li>
-                  <li class="wow fadeInDown">
-                    <figure class="featured_img">
-                        <a href="#"><img src="<?php echo base_url() ?>assets/img/550x400.jpg" alt="img"></a>
-                    </figure>
-                    <article class="featured_article">
-                      <div class="article_category">
-                        <a href="#">Technology <i class="fa fa-angle-right"></i></a>
-                        <a href="#">Mobile  <i class="fa fa-angle-right"></i></a>
-                        <a href="#">Samsung</a>
-                      </div>
-                      <h2 class="article_titile"><a href="single_page.html">Apple iPad Production Reaches 4 Million</a></h2>
-                      <p>Nunc tincidunt, elit non cursus euismod, lacus augue ornare metus, egestas imperdiet nulla nisl quis mauris. Suspendisse a pharetra urna. Morbi dui lectus, pharetra nec elementum eget, vulputate ut nisi. Aliquam accumsan, nulla sed feugiat...</p>
-                    </article>
-                  </li>
+                    <?php if(isset($data)) { ?>
+                        <?php foreach ($data as $news): ?>
+                            <li class="wow fadeInDown">
+                              <figure class="featured_img">
+                                  <a href="#"><img src="<?php echo $news->image ?>" alt="img" height="550" width="400"></a>
+                              </figure>
+                              <article class="featured_article">
+                                <!-- <div class="article_category">
+                                  <a href="#">Technology <i class="fa fa-angle-right"></i></a>
+                                  <a href="#">Mobile  <i class="fa fa-angle-right"></i></a>
+                                  <a href="#">Samsung</a>
+                                </div> -->
+                                <h2 class="article_titile"><a href="single_page.html"><?php echo $news->title ?></a></h2>
+                                <p><?php echo substr($news->content, 0, 200); ?>...</p>
+                              </article>
+                            </li>
+                        <?php endforeach; ?>
+                    <?php } ?>
                 </ul><!-- End featured post -->
                 <!-- start post pagination -->
                 <nav>
@@ -400,7 +175,7 @@
             <div class="col-lg-3 col-md-3 col-sm-12">
               <div class="right_sidebar">
                 <!-- start single widget -->
-                <div class="single_widget">
+                <!-- <div class="single_widget">
                   <h2>Popular Post</h2>
                   <ul class="ppost_nav wow fadeInDown">
                     <li>
@@ -502,13 +277,13 @@
                         <div class="media-body">
                           <a class="catg_title" href="#"> Aliquam malesuada diam eget turpis varius</a>
                         </div>
-                      </div>
+                    </div>s
                     </li>
                   </ul>
                 </div><!-- End single widget -->
                 <!-- start single widget -->
-                <div class="single_widget">
-                  <!-- tab section-->
+                <!-- <div class="single_widget">
+                  <!-- tab section
                   <ul class="nav nav-tabs custom-tabs" role="tablist">
                     <li role="presentation" class="active"><a href="#recentPost" aria-controls="home" role="tab" data-toggle="tab" aria-expanded="true">Recent Post</a></li>
                     <li role="presentation" class=""><a href="#recentComent" aria-controls="messages" role="tab" data-toggle="tab" aria-expanded="false">Recent Comment</a></li>
@@ -724,8 +499,8 @@
                         </li>
                       </ul>
                     </div>
-                  </div><!-- End tab section-->
-                </div><!-- End single widget -->
+                  </div><!-- End tab section
+                </div> End single widget -->
                 <!-- start single widget -->
                 <div class="single_widget">
                  <h2>Categories</h2>
@@ -740,7 +515,7 @@
                  </ul>
                 </div><!-- End single widget -->
                  <!-- start single widget -->
-                <div class="single_widget">
+                <!-- <div class="single_widget">
                  <h2>Category Archive</h2>
                  <select class="catgArchive">
                     <option>Select Category</option>
@@ -752,7 +527,7 @@
 
                 </div><!-- End single widget -->
                  <!-- start single widget -->
-                <div class="single_widget">
+                <!-- <div class="single_widget">
                  <h2>Links</h2>
                  <ul>
                    <li><a href="#">Log in</a></li>
@@ -770,8 +545,8 @@
       <footer id="footer">
         <div class="footer_top">
           <div class="container">
-            <div class="row">
-              <div class="col-lg-3 col-md-3 col-sm3">
+            <!-- <div class="row"> -->
+              <!-- <div class="col-lg-3 col-md-3 col-sm3">
                 <div class="footer_widget wow fadeInLeftBig">
                   <h2>Labels</h2>
                   <ul class="labels_nav">
@@ -785,8 +560,8 @@
                     <li><a href="#">Sports</a></li>
                   </ul>
                 </div>
-              </div>
-              <div class="col-lg-3 col-md-3 col-sm3">
+              </div> -->
+              <!-- <div class="col-lg-3 col-md-3 col-sm3">
                 <div class="footer_widget">
                   <h2>Popular Post</h2>
                   <ul class="ppost_nav wow fadeInLeftBig">
@@ -822,13 +597,13 @@
                     </li>
                   </ul>
                 </div>
-              </div>
-              <div class="col-lg-3 col-md-3 col-sm3">
+              </div> -->
+              <!-- <div class="col-lg-3 col-md-3 col-sm3">
                 <div class="footer_widget wow fadeInRightBig">
                   <h2>Flickr Images</h2>
                 </div>
-              </div>
-              <div class="col-lg-3 col-md-3 col-sm3">
+              </div> -->
+              <!-- <div class="col-lg-3 col-md-3 col-sm3">
                 <div class="footer_widget wow fadeInRightBig">
                   <h2>Jetpack Subscription Widget</h2>
                   <form class="subscribe_form">
@@ -841,8 +616,8 @@
                     </p>
                   </form>
                 </div>
-              </div>
-            </div>
+              </div> -->
+            <!-- </div> -->
           </div>
         </div>
         <div class="footer_bottom">
