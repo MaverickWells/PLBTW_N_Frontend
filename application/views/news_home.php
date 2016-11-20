@@ -32,6 +32,47 @@
     </head>
 
     <body>
+        <!-- Modal -->
+        <div id="SignUpModal" class="modal fade" role="dialog">
+          <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Join Us and Get Your API KEY</h4>
+              </div>
+              <div class="modal-body">
+                <form class="" action="<?php echo base_url()?>index.php/user/insert" method="post">
+                    <div class="box-body">
+                      <div class="form-group row">
+                        <label for="username" class="col-sm-2 control-label">Username</label>
+
+                        <div class="col-sm-8">
+                          <input type="text" class="form-control" name="username" placeholder="Username">
+                        </div>
+                      </div>
+                      <div class="form-group row">
+                        <label for="password" class="col-sm-2 control-label">Password</label>
+
+                        <div class="col-sm-8">
+                          <input type="password" class="form-control" name="password" placeholder="Password">
+                        </div>
+                      </div>
+                  </div>
+                    <!-- /.box-body -->
+                    <div class="box-footer">
+                      <!-- <button type="reset" class="btn btn-default">Cancel</button> -->
+                      <button type="submit" value="submit" class="btn btn-success" >Sign Up</button>
+                      <button type="button" class="btn btn-default pull-right" data-dismiss="modal">Close</button>
+                    </div>
+                    <!-- /.box-footer -->
+                </form>
+              </div>
+            </div>
+
+          </div>
+        </div>
       <!-- =========================
         //////////////This Theme Design and Developed //////////////////////
         //////////// by www.wpfreeware.com======================-->
@@ -62,6 +103,7 @@
             <div id="navbar" class="navbar-collapse collapse">
               <ul class="nav navbar-nav custom_nav">
                 <li class="active"><a href="index.html">Home</a></li>
+                <!-- <li class=""><a href="" data-toggle="modal" data-target="#SignUpModal">Login</a></li> -->
                 <!-- <li><a href="#">Technology</a></li> -->
                 <!-- <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Mobile</a>
@@ -80,6 +122,7 @@
               </ul>
             </div><!--/.nav-collapse -->
             <div class="search">
+                <a class="signup_icon" href="" data-toggle="modal" data-target="#SignUpModal"><i class="fa fa-user"></i></a>
                 <a class="search_icon" href="#"><i class="fa fa-search"></i></a>
                 <form action="">
                   <input class="search_bar" type="text" placeholder="Search here">
@@ -98,10 +141,10 @@
     				   <!-- Set up your HTML -->
     				   <h2 class="featured_title">On Featured</h2>
     				  <div class="slick_slider">
-                          <?php foreach ($data as $news) { ?>
+                          <?php for($i = 0; $i < 20; $i++) { ?>
                                 <div class="single_iteam">
-              					  <img src="<?php echo $news->image ?>" alt="img" height="300" width="250">
-              					  <h2><a class="slider_tittle" href="#"><?php echo $news->title  ?></a></h2>
+              					  <img src="<?php echo $data[$i]->image ?>" alt="img" height="300" width="250">
+              					  <h2><a class="slider_tittle" href="#"><?php echo $data[$i]->title  ?></a></h2>
               					</div>
                           <?php } ?>
     				  </div>
@@ -117,12 +160,12 @@
                   <h2>Post of the month</h2>
                   <ul class="post_nav">
                       <?php if(isset($month)){ ?>
-                          <?php foreach ($month as $news) { ?>
+                          <?php for($i = 0; $i < 20; $i++) { ?>
                               <li>
                                 <figure class="effect-lily">
-                                  <a href=""><img src="<?php echo $news->image ?>" alt="img" height="185" width="150"></a>
+                                  <a href=""><img src="<?php echo $month[$i]->image ?>" alt="img" height="185" width="150"></a>
                                   <figcaption>
-                                    <a href=""><?php echo $news->title ?></a>
+                                    <a href=""><?php echo $month[$i]->title ?></a>
                                   </figcaption>
                                 </figure>
                               </li>
@@ -505,13 +548,11 @@
                 <div class="single_widget">
                  <h2>Categories</h2>
                  <ul>
-                   <li class="cat-item"><a href="#">Technology</a></li>
-                   <li class="cat-item"><a href="#">Games</a></li>
-                   <li class="cat-item"><a href="#">Business</a></li>
-                   <li class="cat-item"><a href="#">Gallery</a></li>
-                   <li class="cat-item"><a href="#">Slider</a></li>
-                   <li class="cat-item"><a href="#">Life & Style</a></li>
-                   <li class="cat-item"><a href="#">Sports</a></li>
+                    <?php if (isset($category)): ?>
+                        <?php foreach ($category as $cat): ?>
+                            <li class="cat-item"><a href="#"><?php echo $cat->category ?></a></li>
+                        <?php endforeach; ?>
+                    <?php endif; ?>
                  </ul>
                 </div><!-- End single widget -->
                  <!-- start single widget -->

@@ -15,6 +15,14 @@ class NEWS_MODEL extends CI_Model {
 	// 	//var_dump($query->row_array());
 	// 	return $query->row_array();
 	// }
+	public function GetCategory()
+	{
+		$this->db->distinct();
+		$this->db->select('category');
+		$query = $this->db->get('news');
+
+		return $query->result();
+	}
 
 	public function GetAllNews()
 	{

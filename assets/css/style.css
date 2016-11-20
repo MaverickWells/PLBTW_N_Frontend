@@ -254,19 +254,38 @@ opacity: 1;
   position: relative;
   width: 86%;
 }
+
+.login{
+    float: right;
+    position: relative;
+}
+
+.signup_icon i {
+  background: none repeat scroll 0 0 #fff;
+  /*display: block;*/
+  float: right;
+  height: 15px;
+  line-height: 15px;
+  margin-top: 10px;
+  margin-left: 5px;
+  text-align: center;
+  width: 15px;
+}
+
 .search{
   float: right;
   position: relative;
 }
 .search_icon i {
   background: none repeat scroll 0 0 #fff;
-  display: block;
+  /*display: block;*/
   float: right;
-  height: 30px;
-  line-height: 30px;
+  height: 15px;
+  line-height: 15px;
   margin-top: 10px;
+  margin-left: 5px;
   text-align: center;
-  width: 30px;
+  width: 15px;
 }
 
 .search_bar {
