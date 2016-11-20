@@ -141,7 +141,12 @@
     				   <!-- Set up your HTML -->
     				   <h2 class="featured_title">On Featured</h2>
     				  <div class="slick_slider">
-                          <?php for($i = 0; $i < 20; $i++) { ?>
+                          <?php if(count($data) > 20){ ?>
+                          <?php $length = 20; ?>
+                          <?php }else{ ?>
+                          <?php $length = count($data); ?>
+                          <?php } ?>
+                          <?php for($i = 0; $i < $length; $i++) { ?>
                                 <div class="single_iteam">
               					  <img src="<?php echo $data[$i]->image ?>" alt="img" height="300" width="250">
               					  <h2><a class="slider_tittle" href="#"><?php echo $data[$i]->title  ?></a></h2>
@@ -159,8 +164,13 @@
                 <div class="single_widget">
                   <h2>Post of the month</h2>
                   <ul class="post_nav">
+                      <?php if(count($month) > 20){ ?>
+                      <?php $length = 20; ?>
+                      <?php }else{ ?>
+                      <?php $length = count($month); ?>
+                      <?php } ?>
                       <?php if(isset($month)){ ?>
-                          <?php for($i = 0; $i < 20; $i++) { ?>
+                          <?php for($i = 0; $i < $length; $i++) { ?>
                               <li>
                                 <figure class="effect-lily">
                                   <a href=""><img src="<?php echo $month[$i]->image ?>" alt="img" height="185" width="150"></a>

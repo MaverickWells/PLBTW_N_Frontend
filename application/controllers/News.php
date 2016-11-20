@@ -23,7 +23,7 @@ class News extends CI_Controller {
 		$all_news = $this->news_model->GetAllNews();
 		$month_data = $this->news_model->GetNewsMonthPost();
 		$category = $this->news_model->GetCategory();
-		
+
 		$this->load->view('news_home', array(
 			'data' => $all_news,
 			'month' => $month_data,
