@@ -24,8 +24,12 @@ class NEWS_MODEL extends CI_Model {
 		return $query->result();
 	}
 
-	public function GetAllNews()
+	public function GetAllNews($cat)
 	{
+		if(isset($cat) && $cat != ''){
+			$this->db->where('category', $cat);
+		}
+
 		$query = $this->db->get('news');
 
 		return $query->result();

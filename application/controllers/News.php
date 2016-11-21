@@ -18,9 +18,9 @@ class News extends CI_Controller {
 	 * map to /index.php/welcome/<method_name>
 	 * @see https://codeigniter.com/user_guide/general/urls.html
 	 */
-	public function index()
+	public function index($cat = '')
 	{
-		$all_news = $this->news_model->GetAllNews();
+		$all_news = $this->news_model->GetAllNews($cat);
 		$month_data = $this->news_model->GetNewsMonthPost();
 		$category = $this->news_model->GetCategory();
 

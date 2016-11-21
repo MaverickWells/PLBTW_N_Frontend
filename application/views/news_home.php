@@ -97,12 +97,12 @@
                 <span class="icon-bar"></span>
               </button>
 
-              <a class="navbar-brand" href="index.html"><img src="<?php echo base_url() ?>assets/img/logo.png" alt="logo"></a>
+              <a class="navbar-brand" href="<?php echo base_url()?>"><img src="<?php echo base_url() ?>assets/img/logo.png" alt="logo"></a>
 
             </div>
             <div id="navbar" class="navbar-collapse collapse">
               <ul class="nav navbar-nav custom_nav">
-                <li class="active"><a href="index.html">Home</a></li>
+                <li class="active"><a href="<?php echo base_url()?>">Home</a></li>
                 <!-- <li class=""><a href="" data-toggle="modal" data-target="#SignUpModal">Login</a></li> -->
                 <!-- <li><a href="#">Technology</a></li> -->
                 <!-- <li class="dropdown">
@@ -134,11 +134,11 @@
       <!-- End header -->
       <!-- start content section -->
       <section id="content">
-          <div class="row">
+          <!-- <div class="row">
             <div class="col-lg-12 col-md-12 col-sm-12">
-    				<!-- start featured slider -->
+    				<!-- start featured slider
     				<div class="featured_slider">
-    				   <!-- Set up your HTML -->
+    				   <!-- Set up your HTML
     				   <h2 class="featured_title">On Featured</h2>
     				  <div class="slick_slider">
                           <?php if(count($data) > 20){ ?>
@@ -153,9 +153,9 @@
               					</div>
                           <?php } ?>
     				  </div>
-    				</div><!-- End featured slider -->
+    				</div><!-- End featured slider
             </div>
-          </div>
+          </div> -->
         <div class="container">
           <div class="row">
             <div class="col-lg-3 col-md-3 col-sm-4">
@@ -560,7 +560,7 @@
                  <ul>
                     <?php if (isset($category)): ?>
                         <?php foreach ($category as $cat): ?>
-                            <li class="cat-item"><a href="#"><?php echo $cat->category ?></a></li>
+                            <li class="cat-item"><a href="<?php echo base_url().'index.php/news/index/'.$cat->category?>"><?php echo $cat->category ?></a></li>
                         <?php endforeach; ?>
                     <?php endif; ?>
                  </ul>
