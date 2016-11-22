@@ -101,7 +101,7 @@
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav custom_nav">
-            <li class="active"><a href="index.html">Home</a></li>
+            <li class="active"><a href="<?php echo base_url()?>">Home</a></li>
           </ul>
 
         </div><!--/.nav-collapse -->
@@ -145,9 +145,9 @@
                       <?php for($i = 0; $i < $length; $i++) { ?>
                           <li>
                             <figure class="effect-lily">
-                              <a href=""><img src="<?php echo $month[$i]->image ?>" alt="img" height="185" width="150"></a>
+                              <a href="<?php echo base_url().'index.php/news_single/index/'.$month[$i]->id_news  ?>"><img src="<?php echo $month[$i]->image ?>" alt="img" height="185" width="150"></a>
                               <figcaption>
-                                <a href=""><?php echo $month[$i]->title ?></a>
+                                <a href="<?php echo base_url().'index.php/news_single/index/'.$month[$i]->id_news  ?>"><?php echo $month[$i]->title ?></a>
                               </figcaption>
                             </figure>
                           </li>
