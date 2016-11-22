@@ -103,23 +103,8 @@
             <div id="navbar" class="navbar-collapse collapse">
               <ul class="nav navbar-nav custom_nav">
                 <li class="active"><a href="<?php echo base_url()?>">Home</a></li>
-                <!-- <li class=""><a href="" data-toggle="modal" data-target="#SignUpModal">Login</a></li> -->
-                <!-- <li><a href="#">Technology</a></li> -->
-                <!-- <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Mobile</a>
-                  <ul class="dropdown-menu" role="menu">
-                    <li><a href="#">Android</a></li>
-                    <li><a href="#">Samsung</a></li>
-                    <li><a href="#">Nokia</a></li>
-                    <li><a href="#">Walton Mobile</a></li>
-                    <li><a href="#">Sympony</a></li>
-                  </ul>
-                </li> -->
-                <!-- <li><a href="#">Laptops</a></li> -->
-                <!-- <li><a href="#">Tablets</a></li> -->
-                <!-- <li><a href="contact.html">Contact Us</a></li> -->
-                <!-- <li><a href="404.html">404 Page</a></li> -->
               </ul>
+
             </div><!--/.nav-collapse -->
             <div class="search">
                 <a class="signup_icon" href="" data-toggle="modal" data-target="#SignUpModal"><i class="fa fa-user"></i></a>
@@ -164,6 +149,7 @@
                 <div class="single_widget">
                   <h2>Post of the month</h2>
                   <ul class="post_nav">
+                      <?php if(isset($month)){ ?>
                       <?php if(count($month) > 20){ ?>
                       <?php $length = 20; ?>
                       <?php }else{ ?>
@@ -180,6 +166,7 @@
                                 </figure>
                               </li>
                           <?php } ?>
+                      <?php } ?>
                       <?php } ?>
                   </ul>
                 </div><!-- End single widget -->
@@ -203,7 +190,7 @@
                                   <a href="#">Mobile  <i class="fa fa-angle-right"></i></a>
                                   <a href="#">Samsung</a>
                                 </div> -->
-                                <h2 class="article_titile"><a href="single_page.html"><?php echo $news->title ?></a></h2>
+                                <h2 class="article_titile"><a href="<?php echo base_url().'index.php/news_single/index/'.$news->id_news  ?>"><?php echo $news->title ?></a></h2>
                                 <p><?php echo substr($news->content, 0, 200); ?>...</p>
                               </article>
                             </li>
@@ -211,7 +198,7 @@
                     <?php } ?>
                 </ul><!-- End featured post -->
                 <!-- start post pagination -->
-                <nav>
+                <!-- <nav>
                   <ul class="pagination">
                     <li><a href="#"><span aria-hidden="true">&laquo;</span><span class="sr-only">Previous</span></a></li>
                     <li><a href="#">1</a></li>
@@ -221,7 +208,12 @@
                     <li><a href="#">5</a></li>
                     <li><a href="#"><span aria-hidden="true">&raquo;</span><span class="sr-only">Next</span></a></li>
                   </ul>
-                </nav>
+                </nav> -->
+                <!-- <div class="pagination">
+                    <ul>
+                        <?php echo $pagination ?>
+                    </ul>
+                </div> -->
                 <!-- End post pagination -->
               </div>
             </div>

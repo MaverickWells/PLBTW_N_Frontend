@@ -44,12 +44,12 @@ class NEWS_MODEL extends CI_Model {
 		return $query->result();
 	}
 
-	// public function GetNews($id)
-	// {
-	// 	$query = $this->db->get_where('news', array('id_news' => $id));
-	// 	//var_dump($query->row_array());
-	// 	return $query->row_array();
-	// }
+	public function GetNews($id)
+	{
+		$query = $this->db->get_where('news', array('id_news' => $id));
+		//var_dump($query->row_array());
+		return $query->row_array();
+	}
 
 	// public function DeleteNews($id)
 	// {
