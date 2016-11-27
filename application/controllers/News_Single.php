@@ -20,6 +20,8 @@ class News_Single extends CI_Controller {
 	 */
 	public function index($news_id)
 	{
+		$this->news_model->UpdateNewsReadCount($news_id);
+		
 		$news = $this->news_model->GetNews($news_id);
 		$month_data = $this->news_model->GetNewsMonthPost();
 		$category = $this->news_model->GetCategory();

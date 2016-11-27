@@ -62,4 +62,13 @@ class NEWS_MODEL extends CI_Model {
 	// 	$this->db->where('id_news', $idnews);
 	// 	$this->db->update('news', $data);
 	// }
+
+	public function UpdateNewsReadCount($idnews)
+	{
+		$this->db->where('id_news', $idnews);
+		$this->db->set('read_count', 'read_count + 1', FALSE);
+		$this->db->update('news');
+
+		return $this->db->affected_rows();
+	}
 }
